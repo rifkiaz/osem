@@ -181,13 +181,13 @@ module ApplicationHelper
     link_text = (
       conference.try(:organization).try(:name) ||
       ENV['OSEM_NAME'] ||
-      'OSEM'
+      'UNS Event'
     )
     link_to(
       link_text,
       root_path,
       class: 'navbar-brand',
-      title: 'Open Source Event Manager'
+      title: 'Universitas Sebelas Maret Event Manager'
     )
   end
 
